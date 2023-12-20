@@ -1,0 +1,104 @@
+section {
+    position: relative;
+    padding: 30px;
+    
+}
+.footer {
+    /* background: #8E98A7; */
+    line-height: 1.7;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer_nav {
+    position: relative;
+    margin: 150px;
+    margin-left: 150px;
+}
+.footer_nav a {
+    color: white;
+    text-decoration: none;
+}
+.footer_container {
+	width: 100%;
+    max-width: 100%;
+    margin: 0px; 
+    overflow: hidden; 
+	display: flex;
+    align-items: left;
+    justify-content: left;
+	position: absolute;
+	background-color: #8E98A7;
+    font-size: 20px;
+    
+    
+}
+.addres {
+    margin: 150px;
+    margin-left: 75px;
+    position: absolute;
+}
+.language {
+    margin: 150px;
+    margin-left: 100px;
+}
+
+/* .Enter_button {
+    border-color: greenyellow;
+    color: white;
+    background-color: greenyellow;
+    
+} */
+
+.footer_nav{
+    margin-left: 150px;
+}
+.footer_nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 15px;
+}
+.footer_nav a:hover {
+    color: #B2985E;
+    transition: .4s;
+    border-bottom: 1px solid #B2985E;
+    padding-bottom: 5px;
+}
+.Enter_name {
+    margin-top: 143px ;
+    line-height: 2.5;
+}
+.Enter_email {
+    line-height: 2.5;
+}
+.Enter_number {
+    line-height: 2.5;
+}
+.Enter_textfield {
+    line-height: 2.5;
+}
+.Enter_checkbox {
+    line-height: 2.5;
+}
+.Enter_button {
+    line-height: 2.5;
+}
+.footer_logo h1{
+    position: absolute;
+    margin-top: 60px;
+    font-size: 40px ;
+    margin-left: 180px;
+}
+.footer_icon {
+    margin-right: 10px;
+    top: auto;
+    position: absolute;
+    height: 5px;
+    margin-left: 70px;
+    margin: 50px;
+    padding: 10px;
+
+
+}

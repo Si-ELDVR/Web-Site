@@ -1,0 +1,128 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+	
+/* li {
+	display: inline-block;
+	position: absolute;
+	display: list-item;
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 10px;
+	
+}
+ol , ul {
+	list-style: none
+}
+ul {
+	margin: 0;
+    padding: 0;
+	list-style-type: none;
+	position: absolute;
+
+} */
+.b1 {
+	text-align: center;
+	display: inline-block;
+	padding: 15px 40px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	position:relative;
+	overflow:hidden;
+	margin: 0 20px;
+	display: flex;
+}
+.b1 :before {
+	content: "";
+	position: absolute;
+	width: 0;
+	background : #ff0000;
+	left: 45%;
+	height: 2px;
+	bottom: 0;
+	transition: all .3s;
+	opacity: 0.7;
+}
+.b1 :hover :before {
+	width: 100%;
+	left:0;
+	
+}
+#type3 {
+	
+	padding-bottom: 60px;
+	position: relative;
+	display: flex;
+  }
+.b2 {
+	text-align: center;
+	display: inline-block;
+	padding: 15px 40px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	position:relative; 
+	overflow:hidden;
+	margin: 0 20px;
+	
+}
+.b2 :before {
+	content: "";
+	position: absolute;
+	width: 0;
+	background : #ff0000;
+	left: 45%;
+	height: 2px;
+	bottom: 0;
+	transition: all .3s;
+	opacity: 0.7;
+}
+.b2 :hover :before {
+	width: 100%;
+	left:0;
+	
+}

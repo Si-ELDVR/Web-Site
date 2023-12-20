@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.AboutUs_container {
+    width: 80%;
+    margin: auto;
+    top: 150px !important;
+}
+.AboutUs_heading {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 5rem 0;
+    color:#B2985E ;
+}
+
+.counter_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.counter {
+    text-align: center;
+}
+.counter h3 {
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:#B2985E ;
+}
+
+.counter h6 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: #8E98A7;
+}
+.icon7 {
+    height: 5rem;
+    width: auto;
+}

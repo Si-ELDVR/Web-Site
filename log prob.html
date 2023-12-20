@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Модальное окно с регистрацией и авторизацией</title>
+  <style>
+    /* Стили для модального окна */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* Стили для кнопок открытия и закрытия модального окна */
+    .open-modal-btn {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .close-modal-btn {
+      float: right;
+      padding: 5px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Кнопка для открытия модального окна -->
+<button class="open-modal-btn" onclick="openModal()">Открыть модальное окно</button>
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal-btn" onclick="closeModal()">&times;</span>
+    <div id="loginForm">
+      <h2>Войти в систему</h2>
+      <!-- Форма входа -->
+      <input type="text" id="loginUsername" placeholder="Логин">
+      <input type="password" id="loginPassword" placeholder="Пароль">
+      <button onclick="signIn()">Sign In</button>
+    </div>
+    <div id="registrationForm" style="display:none;">
+      <h2>Регистрация</h2>
+      <!-- Форма регистрации -->
+      <input type="text" id="fullName" placeholder="Enter your full name">
+      <input type="email" id="email" placeholder="Enter your E-mail">
+      <input type="password" id="regPassword" placeholder="Create a password">
+      <input type="text" id="country" placeholder="Enter your Country-Region-City">
+      <input type="date" id="dob" placeholder="Enter your date of birth">
+      <button onclick="register()">Registration</button>
+    </div>
+  </div>
+</div>
+<button id="logoutBtn" style="display:none;" onclick="logOut()">Выйти из системы</button>
+<script>
+  // Функции для открытия и закрытия модального окна
+  function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+
+  // ... (Функции для авторизации/регистрации, как в предыдущем примере)
+  function signIn() {
+      // Получить значения логина и пароля
+      var username = document.getElementById("loginUsername").value;
+      var password = document.getElementById("loginPassword").value;
+
+      // Здесь вы можете выполнить проверку логина и пароля, для примера:
+      if (username === "Eldorado" && password === "123456") {
+        alert("Вы успешно вошли в систему!");
+        showLogoutButton(); // Показать кнопку выхода
+      } else {
+        alert("Неверный логин или пароль");
+      }
+    }
+
+    function register() {
+      // Получить значения для регистрации
+      var fullName = document.getElementById("fullName").value;
+      var email = document.getElementById("email").value;
+      var regPassword = document.getElementById("regPassword").value;
+      var country = document.getElementById("country").value;
+      var dob = document.getElementById("dob").value;
+
+      // Здесь можно использовать эти данные для регистрации пользователя
+      alert("Вы успешно зарегистрированы!");
+      showLogoutButton(); // Показать кнопку выхода
+    }
+
+    function showLogoutButton() {
+      // Скрыть формы входа и регистрации
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registrationForm").style.display = "none";
+
+      // Показать кнопку выхода
+      document.getElementById("logoutBtn").style.display = "block";
+    }
+
+    function logOut() {
+      // Очистить данные пользователя, если необходимо
+      // Показать формы входа и регистрации
+      document.getElementById("loginForm").style.display = "block";
+      document.getElementById("registrationForm").style.display = "block";
+
+      // Скрыть кнопку выхода
+      document.getElementById("logoutBtn").style.display = "none";
+    }
+
+// ... (остальной JavaScript код)
+
+function showLogoutButton() {
+  // Скрыть формы входа и регистрации
+  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("registrationForm").style.display = "none";
+
+  // Показать кнопку выхода
+  document.getElementById("logoutBtn").style.display = "block";
+}
+
+function logOut() {
+  // Очистить данные пользователя, если необходимо
+  // Показать формы входа и регистрации
+  document.getElementById("loginForm").style.display = "block";
+  document.getElementById("registrationForm").style.display = "block";
+
+  // Скрыть кнопку выхода
+  document.getElementById("logoutBtn").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
